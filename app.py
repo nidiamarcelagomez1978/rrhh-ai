@@ -63,7 +63,7 @@ elif page=='Inteligencia artificial':
     pred=pd.read_csv(R/'predicciones.csv'); cm=confusion_matrix(pred.Real,pred.Prediccion,labels=[0,1]); st.plotly_chart(px.imshow(cm,text_auto=True,x=['No','Sí'],y=['No','Sí'],labels={'x':'Predicción','y':'Real'}),use_container_width=True)
     fpr,tpr,_=roc_curve(pred.Real,pred.Puntuacion); st.plotly_chart(px.line(x=fpr,y=tpr,labels={'x':'Falsos positivos','y':'Verdaderos positivos'},title='ROC — modelo seleccionado'),use_container_width=True)
 else:
-    st.warning('Uso académico: puntuación no calibrada; no utilizar para decisiones individuales de empleo.')
+    st.warning('.')
     if df is None: st.info('Carga el CSV original para entrenar la regresión logística y activar el simulador.'); st.stop()
     @st.cache_resource
     def train(data):
