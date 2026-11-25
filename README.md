@@ -1,5 +1,5 @@
 # HR Analytics AI
-Dashboard académico de rotación del talento humano. Resultados originales exportados desde Colab.
+Dashboard  rotación del talento humano. Resultados originales exportados desde Colab.
 
 ## Ejecutar localmente
 `pip install -r requirements.txt` y `streamlit run app.py`.
@@ -10,4 +10,4 @@ Dashboard académico de rotación del talento humano. Resultados originales expo
 3. En https://share.streamlit.io/ iniciar sesión, crear una app desde el repositorio, seleccionar rama main y archivo app.py.
 4. Abrir el enlace generado. Cargar el CSV IBM original en la barra lateral o incluirlo en `data/WA_Fn-UseC_-HR-Employee-Attrition.csv` si su licencia permite redistribución.
 
-Sin CSV funcionan resumen, hipótesis exportadas y evaluación original. Con CSV se activan filtros, PCA y simulador reentrenado. El modelo joblib original se conserva como evidencia, no se deserializa por compatibilidad y seguridad. Las puntuaciones no están calibradas. No usar para decisiones laborales individuales.
+
