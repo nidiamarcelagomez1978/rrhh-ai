@@ -16,7 +16,7 @@ st.set_page_config(page_title='HR Analytics AI',page_icon='📊',layout='wide')
 ROOT=Path(__file__).parent
 R=ROOT/'resultados'
 st.title('HR Analytics AI')
-st.caption('Ciencia de Datos | Rotación del talento humano | Prototipo académico')
+st.caption('Ciencia de Datos | Rotación del talento humano ')
 page=st.sidebar.radio('Secciones',['Resumen ejecutivo','Análisis exploratorio','Análisis estadístico','Inteligencia artificial','Simulador predictivo'])
 name='WA_Fn-UseC_-HR-Employee-Attrition.csv'
 upload=st.sidebar.file_uploader('Cargar CSV original',type='csv')
